@@ -1,0 +1,14 @@
+{
+  "name": "todoapp",
+  "version": "1.0.0",
+  "description": "ToDOApp for yout Daily tasks",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server"
+  },
+  "author": "Shreyash",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
