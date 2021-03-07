@@ -1,19 +1,19 @@
 const tasks = [
     {
-        _id: '1',
+        user:'604460eabb79650f709564a7',
         name: 'Morning Task',
         task: 'Joking and excercise'
     },
     {
-        _id: '2',
+        user:'604460eabb79650f709564a7',
         name: 'Daily task',
         task: 'Wake up, coding, sleep Wake up, coding, sleep Wake up, coding, sleep'
     },
     {
-        _id: '3',
+        user:'604460eabb79650f709564a8',
         name: 'Weekends task',
         task: 'web series and chill'
     },
 ]
 
-module.exports = tasks
+export default tasks

@@ -15,7 +15,7 @@ const Header = () => {
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto">
                 <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#link"><i class="fas fa-sign-out-alt"></i>Sign Out</Nav.Link>
+                <Nav.Link href="#link"><i className="fas fa-sign-out-alt"></i>Sign Out</Nav.Link>
                 
                 </Nav>
                 {/* <Form inline>
