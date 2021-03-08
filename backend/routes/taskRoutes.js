@@ -2,13 +2,11 @@ import express from 'express'
 import asyncHandler from 'express-async-handler'
 const router = express.Router()
 import Task from '../models/taskModel.js'
+import { getTasks, createTasks, removeTasks} from '../controller/taskController.js'
+import { protect } from '../middleware/authMiddleware.js'
 
-//@desc Fetch all tasks
-//@route GET /api/tasks
-//@access Private
-router.get('/',asyncHandler(async(req, res) => {
-    const tasks = await Task.find({})
-    res.json(tasks)
-}))
+
+router.route('/').get(protect ,getTasks).post(protect ,createTasks)
+router.route('/:id').delete(protect, removeTasks)
 
 export default router
