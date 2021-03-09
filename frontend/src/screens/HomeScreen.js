@@ -43,6 +43,7 @@ const HomeScreen = ({history}) => {
         e.preventDefault()
         if(userInfo){
             dispatch(createTask(name , task))
+            dispatch(listTasks())
             setName('')
             setTask('')
             dispatch(listTasks())
